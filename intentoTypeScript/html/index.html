@@ -1,0 +1,84 @@
+<!-- 
+    Crear la página index.html, la misma contendrá dos secciones:
+a. Formulario de ingreso/modificación de datos
+b. Listado de todos los ciudadanos y listado de ciudadanos filtrados.
+c. Para el nombre, apellido, edad y dni se deberá utilizar input(text). Para país select y para el sexo input(radio)
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=q, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Practica html-Css-TypeScript</title>
+    <script src="/js/Persona.js"></script>
+    <script src="/js/Ciudadano.js"></script>
+    <script src="/js/manejadora.js"></script>
+  </head>
+  <body>
+    <div class="ingresoDatos">
+      <label for="txtNombre"
+        >Nombre <br />
+        <input type="text" name="txtNombre" id="txtNombre" required /> </label
+      ><br />
+      <label for="txtEdad"
+        >Edad <br />
+        <input type="text" name="txtEdad" id="txtEdad" required /> </label
+      ><br />
+      <label for="txtApellido"
+        >Apellido
+        <br />
+        <input
+          type="text"
+          name="txtApellido"
+          id="txtApellido"
+          required
+        /> </label
+      ><br />
+      <label for="txtDni"
+        >Dni
+        <br />
+        <input type="text" name="txtDni" id="txtDni" required /> </label
+      ><br />
+      <label for="txtNacionalidad"
+        ><br />
+        <label for="txtNacionalidad"
+          >Nacionalidad:
+          <select name="txtNacionalidad" id="txtNacionalidad">
+            <option value="argentino">argentino</option>
+            <option value="extranjero">extranjero</option>
+          </select>
+        </label>
+      </label>
+      <p>Sexo</p>
+      <label for="masculino"
+        >Masculino
+        <input type="radio" name="sexo" id="masculino" value="masculino" />
+      </label>
+      <label for="femenino"
+        >Femenino
+        <input type="radio" name="sexo" id="femenino" value="femenino" />
+      </label>
+      <br />
+      <br />
+      <input type="button" value="Agregar" id="btnAgregar" />
+      <input type="button" value="Listar" id="btnListar" />
+    </div>
+    <br />
+    <br />
+    <div class="listadoCiudadanos">
+      <table id="tabla">
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+          <th>Dni</th>
+          <th>Nacionalidad</th>
+          <th>Sexo</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
