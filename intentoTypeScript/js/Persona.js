@@ -11,7 +11,21 @@ var Persona = /** @class */ (function () {
         this.edad = edad;
     }
     Persona.prototype.PersonaToString = function () {
-        return JSON.stringify(this);
+        return ('"nombre"' +
+            ":" +
+            '"' +
+            this.nombre +
+            '"' +
+            ',"apellido"' +
+            ":" +
+            '"' +
+            this.apellido +
+            '"' +
+            ',"edad"' +
+            ":" +
+            '"' +
+            this.edad +
+            '"');
     };
     return Persona;
 }());

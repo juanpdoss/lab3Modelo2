@@ -22,7 +22,25 @@ class Ciudadano extends Persona {
   }
 
   CiudadanoToJson() {
-    let personaJSON = JSON.parse(super.PersonaToString());
-
+    return (
+      "{" +
+      super.PersonaToString() +
+      ',"dni"' +
+      ":" +
+      '"' +
+      this.dni +
+      '"' +
+      ',"pais"' +
+      ":" +
+      '"' +
+      this.pais +
+      '"' +
+      ',"sexo"' +
+      ":" +
+      '"' +
+      this.sexo +
+      '"' +
+      "}"
+    );
   }
 }

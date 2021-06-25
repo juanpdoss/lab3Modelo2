@@ -27,7 +27,24 @@ var Ciudadano = /** @class */ (function (_super) {
         return _this;
     }
     Ciudadano.prototype.CiudadanoToJson = function () {
-        var personaJSON = JSON.parse(_super.prototype.PersonaToString.call(this));
+        return ("{" +
+            _super.prototype.PersonaToString.call(this) +
+            ',"dni"' +
+            ":" +
+            '"' +
+            this.dni +
+            '"' +
+            ',"pais"' +
+            ":" +
+            '"' +
+            this.pais +
+            '"' +
+            ',"sexo"' +
+            ":" +
+            '"' +
+            this.sexo +
+            '"' +
+            "}");
     };
     return Ciudadano;
 }(Persona));

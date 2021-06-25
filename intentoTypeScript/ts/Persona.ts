@@ -16,6 +16,22 @@ class Persona {
   }
 
   PersonaToString(): string {
-    return JSON.stringify(this);
+    return (
+      '"nombre"' +
+      ":" +
+      '"' +
+      this.nombre +
+      '"' +
+      ',"apellido"' +
+      ":" +
+      '"' +
+      this.apellido +
+      '"' +
+      ',"edad"' +
+      ":" +
+      '"' +
+      this.edad +
+      '"'
+    );
   }
 }

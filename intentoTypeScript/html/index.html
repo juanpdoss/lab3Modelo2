@@ -1,18 +1,11 @@
-<!-- 
-    Crear la página index.html, la misma contendrá dos secciones:
-a. Formulario de ingreso/modificación de datos
-b. Listado de todos los ciudadanos y listado de ciudadanos filtrados.
-c. Para el nombre, apellido, edad y dni se deberá utilizar input(text). Para país select y para el sexo input(radio)
- -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=q, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segundo Parcial</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <title>Practica html-Css-TypeScript</title>
     <script src="/js/Persona.js"></script>
     <script src="/js/Ciudadano.js"></script>
     <script src="/js/manejadora.js"></script>
@@ -64,7 +57,6 @@ c. Para el nombre, apellido, edad y dni se deberá utilizar input(text). Para pa
       <br />
       <br />
       <input type="button" value="Agregar" id="btnAgregar" />
-      <input type="button" value="Listar" id="btnListar" />
     </div>
     <br />
     <br />
@@ -77,6 +69,8 @@ c. Para el nombre, apellido, edad y dni se deberá utilizar input(text). Para pa
           <th>Dni</th>
           <th>Nacionalidad</th>
           <th>Sexo</th>
+          <th>Modificar</th>
+          <th>Eliminar</th>
         </tr>
       </table>
     </div>
